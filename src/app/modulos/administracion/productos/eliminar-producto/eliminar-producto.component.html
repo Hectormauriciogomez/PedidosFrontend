@@ -1,0 +1,30 @@
+<h4>¿Deseas eliminar el siguiente producto?</h4>
+<br>
+<div class="row">
+    <form [formGroup]="fbValidador" class="col s12" method="post" (ngSubmit)="EditarProducto()">
+        <input type="hidden" formControlName = "id"/>
+      <div class="row">
+        <div class="input-field col s8">
+          <input formControlName="nombre" id="first_name" name="nombre" type="text" class="validate">
+          <label for="first_name" class="active">Nombre del producto</label>
+        </div>
+       
+     
+      <div class="input-field col s8">
+      <input formControlName="precio" id="precioId" name="precio" type="text" class="validate">
+      <label for="precioId" class="active">Precio del producto</label>
+      </div>
+
+      <div class="input-field col s8"> 
+        <input formControlName="imagen" id="ruta" name="imagen" type="text" class="validate">
+        <label for="ruta" class="active">Ruta de la imagen del producto</label>
+        </div>
+      
+      <div class="right col s6">
+        <button [disabled]="!fbValidador.valid" type="submit" class="waves-effect waves-light btn" > ELIMINAR</button>
+        </div>
+      
+    </div>
+    </form>
+  </div>
+

@@ -1,0 +1,107 @@
+<html class="loading"
+  lang="en"
+  data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+  
+
+  <title>Iniciar Sesión | Materialize - Material Design Admin Template</title>
+  <!-- Include core + vendor Styles -->
+  <!-- BEGIN: VENDOR CSS-->
+
+<!-- END: VENDOR CSS-->
+<!-- BEGIN: Page Level CSS-->
+<link rel="stylesheet" type="text/css"
+  href="https://www.mandaleplata.com/css/themes/vertical-gradient-menu-template/style.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/css/pages/login.css">
+
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/css/frontend.css">
+<!-- END: Page Level CSS-->
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/bower_components/animate.css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/bower_components/flag-icon-css/css/flag-icon.min.css">
+<!-- BEGIN: Custom CSS-->
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/css/laravel-custom.css">
+<link rel="stylesheet" type="text/css" href="https://www.mandaleplata.com/css/custom/custom.css">
+<!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+
+<body
+  class="vertical-layout page-header-light vertical-menu-collapsible vertical-gradient-menu 2-columns  login-bg "
+  data-open="click" data-menu="vertical-modern-menu" data-col="1-column">
+  <div class="row">
+    <div class="col s12">
+      <div class="container">
+        <!--  main content -->
+        <div id="login-page" class="row">
+  <div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
+   
+    <form [formGroup]="fgValidador" >
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <h5 class="ml-4">Iniciar Sesión</h5>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12">
+          <i class="material-icons prefix pt-2">email</i>
+          <input formControlName= "usuario" id="email" type="email" class="validate">
+          <label for="email" class="center-align">Usuario</label>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12">
+          <i class="material-icons prefix pt-2">Clave</i>
+          <input formControlName= "clave"  id="password" type="password" class="validate">
+          <label for="password">Clave</label>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col s12 m12 l12 ml-2 mt-1">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Remember Me</span>
+            </label>
+          </p>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="input-field col s12">
+        <button [disabled]="!fgValidador.valid"
+            type="button" (click)="IdentificarUsuario()" 
+            class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Inicia Sesión</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6 m6 l6">
+          <p class="margin medium-small"><a href="https://www.mandaleplata.com/user-register">Registrate!</a></p>
+        </div>
+        <div class="input-field col s6 m6 l6">
+          <p class="margin right-align medium-small"><a href="https://www.mandaleplata.com/user-forgot-password">¿Olvidaste tu contraseña?</a>
+          </p>
+        </div>
+      </div>
+      </form>
+  </div>
+</div>
+      </div>
+      
+      <div class="content-overlay"></div>
+    </div>
+  </div>
+  
+
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN THEME  JS-->
+
+<!-- END THEME  JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+
+</body>
+
+</html>
