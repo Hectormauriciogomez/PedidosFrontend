@@ -9,7 +9,7 @@ import { SeguridadService } from './seguridad.service';
 })
 export class ProductoService {
 
-  url = 'https://frontend-pedidos-ten.vercel.app/';
+  url = 'https://frontend-pedidos-ten.vercel.app';
   token: String = '';
 
   constructor(private http: HttpClient,private seguridadServicio: SeguridadService ) {

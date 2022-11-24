@@ -8,7 +8,7 @@ import { ModeloIdentificar } from '../modelos/identificar.modelo';
 })
 export class SeguridadService {
 
-  url = 'https://frontend-pedidos-ten.vercel.app/';
+  url = 'https://frontend-pedidos-ten.vercel.app';
   datosUsuarioEnSesion = new BehaviorSubject<ModeloIdentificar>(new ModeloIdentificar());
 
   constructor(private http: HttpClient) { 
