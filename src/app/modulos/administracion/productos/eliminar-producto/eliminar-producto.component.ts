@@ -27,7 +27,7 @@ export class EliminarProductoComponent implements OnInit {
     this.BuscarProducto();
   }
   BuscarProducto(){
-    this.servicioProducto.ObtenerRegistroPorId(this.id).subscribe((datos: ModeloProducto) =>{
+    this.servicioProducto.ObtenerRegistroPorId(this.id).subscribe((datos: any) =>{
       this.fbValidador.controls["id"].setValue(this.id);
       this.fbValidador.controls["nombre"].setValue(datos.nombre);
       this.fbValidador.controls["precio"].setValue(datos.precio);
